@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* ------index-------*/
 
-h1 {
+.books {
   margin-bottom: 20px;
 }
 
@@ -30,6 +30,7 @@ td {
 
 .submit {
   display: block;
+  margin-bottom: 10px;
 }
 
 /*-------------------show-----------------*/
@@ -44,3 +45,8 @@ strong {
   margin-bottom: 30px;
 }
 
+/*------------------edit---------------------*/
+
+.editing-book {
+  margin-bottom: 20px;
+}

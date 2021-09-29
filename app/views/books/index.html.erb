@@ -1,8 +1,4 @@
-<h1>Books</h1>
-
-
-
-
+<h1 class="books">Books</h1>
 
 <table>
   <thead>
@@ -11,8 +7,6 @@
       <th>body</th>
       <th></th>
     </tr>
-
-
   </thead>
 
   <% @books.each do |book| %>
@@ -24,12 +18,10 @@
       <td><%= link_to "Show", book_path(book) %></td>
       <td><%= link_to "Edit", edit_book_path(book) %></td>
       <td><%= link_to "Destroy", book_path(book) %></td>
-
     </tr>
   </tbody>
 
   <% end %>
-
 </table>
 
 <div class="create_form">
@@ -43,7 +35,7 @@
     <h4>Body</h4>
     <div class="form"><%= f.text_area :body %></div>
   
-    <div class="submit"></div> <%= f.submit 'Create Book' %>
+    <div class="submit"><%= f.submit 'Create Book' %></div> 
   
   <% end %>  
 
