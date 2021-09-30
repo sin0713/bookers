@@ -1,9 +1,8 @@
 class BooksController < ApplicationController
   def index
-    @books = Book.all.order(created_at: :desc)
+    @books = Book.all.order(created_at: :asc)
     
     @book =Book.new
-    
   end
 
   def create
@@ -16,9 +15,8 @@ class BooksController < ApplicationController
       render :index
     end
     
-   
-    
   end
+  
 
   
   def show
@@ -36,7 +34,6 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated"
       redirect_to book_path(@book)
     else
-      
       render :edit
     end
   end

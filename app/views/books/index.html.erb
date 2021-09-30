@@ -2,11 +2,6 @@
 
 <h1 class="books">Books</h1>
 
-<% if flash[:notice] %>
-  <p id="notice">
-    <%= flash[:notice] %>
-  </p>
-<% end %>
 
 
 
@@ -28,7 +23,7 @@
       <td><%= book.body %></td>
       <td><%= link_to "Show", book_path(book) %></td>
       <td><%= link_to "Edit", edit_book_path(book) %></td>
-      <td><%= link_to "Destroy", book_path(book), method: :delete %></td>
+      <td><%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "本当に削除しますか" %></td>
     </tr>
   </tbody>
 

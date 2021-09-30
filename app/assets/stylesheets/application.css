@@ -29,3 +29,10 @@ body {
   margin: 33px;
   
 }
+
+#notice {
+  color: green;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  
+}
