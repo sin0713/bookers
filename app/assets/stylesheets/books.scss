@@ -3,6 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* ------index-------*/
 
+#notice {
+  color: green;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  
+}
+
 .books {
   margin-bottom: 20px;
 }
@@ -31,6 +38,34 @@ td {
 .submit {
   display: block;
   margin-bottom: 10px;
+  
+}
+
+#error-explanation {
+  width: 450px;
+  border: 2px solid red;
+  background-color: #d3d3d3;
+  
+}
+
+
+.error-heading {
+  text-align: left;
+  color: white;
+  background-color: red;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  
+}
+
+ul {
+  padding: 33px;
+}
+
+.error-message {
+  list-style: square;
+  font-size: 12px;
+  
 }
 
 /*-------------------show-----------------*/
@@ -50,3 +85,4 @@ strong {
 .editing-book {
   margin-bottom: 20px;
 }
+
